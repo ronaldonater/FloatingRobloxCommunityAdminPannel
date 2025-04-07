@@ -18,7 +18,17 @@ This **Tampermonkey userscript** enhances your experience as a Roblox Community 
 
 ## 📸 Preview
 
-*coming soon*
+<details>
+  <summary>Click to reveal screenshots</summary>
+
+  <br>
+
+  ![Preview 1](Preview/Preview1.png)
+  ![Preview 2](Preview/Preview2.png)
+  ![Preview 3](Preview/Preview3.png)
+  ![Preview 4](Preview/Preview4.png)
+
+</details>
 
 ---
 
