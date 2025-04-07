@@ -29,7 +29,7 @@ This **Tampermonkey userscript** enhances your experience as a Roblox Community 
    [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 
 2. **Install the Script**:  
-   Click [here](#) to install the userscript.
+   Click [here](https://raw.githubusercontent.com/ronaldonater/FloatingRobloxCommunityAdminPannel/main/Roblox%20Community%20Floating%20Admin%20Panel.user.js) to install the userscript.
 
 3. Visit any **Roblox Community Page** where you are an administrator — you should now have a settings button in the bottom right corner to access the floating admin panel.
 
@@ -54,7 +54,7 @@ This **Tampermonkey userscript** enhances your experience as a Roblox Community 
 ## 📬 Feedback / Suggestions
 
 Have ideas for new features or spotted a bug?  
-Open an [issue](#) or submit a [pull request](#) — contributions are welcome!
+Open an [issue](https://github.com/ronaldonater/FloatingRobloxCommunityAdminPannel/issues) or submit a [pull request](https://github.com/ronaldonater/FloatingRobloxCommunityAdminPannel/pulls) — contributions are welcome!
 
 ---
 
