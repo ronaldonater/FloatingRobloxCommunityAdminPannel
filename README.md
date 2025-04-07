@@ -1,4 +1,4 @@
-# 🛠️ Roblox Community FLoating Admin Panel (Tampermonkey Script)
+# 🛠️ Roblox Community Floating Admin Panel (Tampermonkey Script)
 
 ---
 
