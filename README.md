@@ -12,7 +12,7 @@ This **Tampermonkey userscript** enhances your experience as a Roblox Community 
 
 - 🪟 **Floating Admin Panel**: A clean, minimal interface for quick access to admin tools.
 - 🖱️ **Draggable & Resizable Window**: Organize your workspace exactly how you like it.
-- 🧹 **Sidebar Cleanup**: Automatically removes unnecessary iframed sidebars for a cleaner, distraction-free view.
+- 🧹 **Navbar Cleanup**: Automatically removes unnecessary iframed navigation bars for a cleaner, distraction-free view.
 
 ---
 
