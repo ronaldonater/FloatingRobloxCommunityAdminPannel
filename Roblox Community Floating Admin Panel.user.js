@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Roblox Community Floating Admin Panel
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Adds a floating window with admin panel access within Roblox community home pages
 // @author       ronaldonater
 // @match        https://www.roblox.com/communities/*
@@ -38,12 +38,17 @@
             background-color: #00a2ff;
             color: white;
             cursor: move;
+            min-height: 40px;
+            box-sizing: border-box;
+            border-radius: 8px 8px 0 0;
         }
         #admin-panel-content {
             flex: 1;
             border: none;
             width: 100%;
-            height: 100%;
+            height: calc(100% - 40px); /* Subtract header height */
+            background-color: #fff;
+            display: block;
         }
         #admin-panel-close, #admin-panel-minimize {
             background: none;
@@ -75,7 +80,18 @@
         }
         .minimized {
             height: 40px !important;
-            resize: none !important; /* Disable resizing when minimized */
+            resize: none !important;
+            min-height: 40px !important;
+            border-radius: 8px !important;
+        }
+        .minimized #admin-panel-content {
+            display: none !important;
+        }
+        .minimized #resize-handle {
+            display: none !important;
+        }
+        .minimized #admin-panel-header {
+            border-radius: 8px !important;
         }
         /* Custom resize handle to make it more visible */
         #resize-handle {
@@ -356,6 +372,8 @@
             // If it was minimized before, restore it
             if (panel.classList.contains('minimized')) {
                 panel.classList.remove('minimized');
+                document.getElementById('admin-panel-minimize').textContent = '−';
+                document.getElementById('admin-panel-minimize').title = 'Minimize';
             }
         }
     }
@@ -369,14 +387,17 @@
     // Minimize the admin panel
     function minimizeAdminPanel() {
         const panel = document.getElementById('admin-panel-container');
+        const button = document.getElementById('admin-panel-minimize');
+
         panel.classList.toggle('minimized');
 
-        // Change button text
-        const button = document.getElementById('admin-panel-minimize');
+        // Update button text based on state
         if (panel.classList.contains('minimized')) {
             button.textContent = '+';
+            button.title = "Maximize";
         } else {
             button.textContent = '−';
+            button.title = "Minimize";
         }
     }
 
