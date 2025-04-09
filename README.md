@@ -4,7 +4,7 @@
 
 This **Tampermonkey userscript** enhances your experience as a Roblox Community **administrator** by adding a sleek, floating **admin panel** directly onto the Roblox Community page you're visiting — *only if you're an admin of that community*.
 
-> ⚠️ You must be an administrator of the community you're viewing for the panel to be active.
+> ⚠️ You must be an administrator of the community you're viewing for the panel to be function.
 
 ---
 
